@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <div class="container">
+    <h1>Calculadora de Resultado Final</h1>
+    <form id="calculator-form">
+      <label for="dias">Ingrese qué día es:</label>
+      <input type="number" id="dias" required />
+
+      <label for="cuotas">Ingrese cuántas cuotas:</label>
+      <input type="number" id="cuotas" required />
+
+      <label for="importe">Ingrese el importe:</label>
+      <input type="number" id="importe" required />
+
+      <button type="button" id="calculate-button">Calcular</button>
+      <div id="result"></div>
+    </form>
+  </div>
+  <body>
+    <script src="./main.js"></script>
+  </body>
+</html>
