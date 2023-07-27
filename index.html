@@ -7,24 +7,27 @@
   <link rel="stylesheet" href="style.css">
   <title>Intereses OSUNR</title>
 </head>
-<div class="container">
-  <h1>Calculadora de Intereses en Cuota</h1>
-  <p>Mujeres > 60 || Hombres > 65<span class="error">No corresponde </span></p>
-  <form id="calculator-form">
-    <label for="dias"></label>
-    <input type="number" id="dias" required placeholder="Ingrese qué día es:" />
 
-    <label for="cuotas"></label>
-    <input type="number" id="cuotas" required placeholder="Ingrese cuántas cuotas" />
+<body>
+  <div class="container">
+    <h1>Calculadora de Intereses en Cuota</h1>
+    <p>Mujeres > 60 || Hombres > 65<span class="error">No corresponde </span></p>
+    <form id="calculator-form">
+      <label for="dias"></label>
+      <input type="number" id="dias" required placeholder="Ingrese qué día es:" />
 
-    <label for="importe"></label>
-    <input type="number" id="importe" required placeholder="Ingrese el importe:" />
+      <label for="cuotas"></label>
+      <input type="number" id="cuotas" required placeholder="Ingrese cuántas cuotas" />
 
-    <button type="button" id="calculate-button">Calcular</button>
-    <div id="result"></div>
+      <label for="importe"></label>
+      <input type="number" id="importe" required placeholder="Ingrese el importe:" />
 
-    <body>
-      <script src="./main.js"></script>
-    </body>
+      <button type="button" id="calculate-button">Calcular</button>
+      <div id="result"></div>
+    </form>
+
+
+    <script src="./main.js"></script>
+</body>
 
 </html>
