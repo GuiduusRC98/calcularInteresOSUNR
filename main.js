@@ -7,9 +7,8 @@ document.getElementById('calculate-button').addEventListener('click', function (
   let resultado = (2.5 / 30) * (30 - dias) + (2.5 * cuotas);
   let Interes = (resultado * importe) / 100;
   let resultadoFinal = (Interes + importe) / cuotas;
-  let InteresesPorMes = resultado / cuotas;
 
-  document.getElementById('result').textContent = `Intereses Por Mes: ${InteresesPorMes} Resultado Final: ${resultadoFinal} Interes: ${Interes}`;
+  document.getElementById('result').textContent = `Resultado Final: ${resultadoFinal}`;
 });
 
 document.getElementById('boton-calcular-edad').addEventListener('click', function () {
