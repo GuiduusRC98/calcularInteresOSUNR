@@ -11,12 +11,14 @@ const calcularInteres = () => {
     if (genero === "hombre" && edad < edadHombre) {
       const resultadoFinal = (2.5 / 30) * (30 - dias) + (2.5 * cuotas);
       const interes = (resultadoFinal * importe) / 100;
-      alert("El interés es: " + interes);
+      const total = importe + interes;
+      document.getElementById('resultado').innerHTML = `El interés es: ${interes.toFixed(2)}<br>Total a pagar: ${total.toFixed(2)}`;
     } else if (genero === "mujer" && edad < edadMujer) {
       const resultadoFinal = (2.5 / 30) * (30 - dias) + (2.5 * cuotas);
       const interes = (resultadoFinal * importe) / 100;
-      alert("El interés es: " + interes);
+      const total = importe + interes;
+      document.getElementById('resultado').innerHTML = `El interés es: ${interes.toFixed(2)}<br>Total a pagar: ${total.toFixed(2)}`;
     } else {
-      alert("No puedes realizar financiación.");
+      document.getElementById('resultado').innerHTML = "No puedes realizar financiación.";
     }
   };
