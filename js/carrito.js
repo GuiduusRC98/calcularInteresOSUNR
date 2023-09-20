@@ -210,12 +210,12 @@ class ProductController {
 
             this.listaDeProducto = data.map(Producto => {
                 return new Producto(
-                    this.id,
-                    this.nombre,
-                    this.precio,
-                    this.descripcionProducto,
-                    this.img,
-                    this.cantidad
+                    productoData.id,
+                    productoData.nombre,
+                    productoData.precio,
+                    productoData.descripcionProducto,
+                    productoData.img,
+                    productoData.cantidad
                 );
             });
 
