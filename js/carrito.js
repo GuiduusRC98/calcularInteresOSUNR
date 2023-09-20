@@ -205,10 +205,10 @@ class ProductController {
 
     async cargarProductosDesdeJSON() {
         try {
-            const resp = await fetch('../ListaProductos.json');
+            const resp = await fetch('/ListaProductos.json');
             const data = await resp.json();
 
-            this.listaDeProducto = data.map(ProductoJson => {
+            this.listaDeProducto = data.map(productoData => {
                 return new Producto(
                     productoData.id,
                     productoData.nombre,
