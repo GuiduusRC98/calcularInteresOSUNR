@@ -4,7 +4,8 @@ const calcularInteres = () => {
     const dias = parseInt(document.getElementById('dias').value);
     const cuotas = parseInt(document.getElementById('cuotas').value);
     const importe = parseFloat(document.getElementById('importe').value);
-    
+    let edadHombre = 65;
+    let edadMujer = 60; 
 
   
     if (genero === "hombre" && edad < edadHombre) {
