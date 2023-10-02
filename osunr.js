@@ -13,13 +13,13 @@ const calcularInteres = () => {
       const interes = (resultadoFinal * importe) / 100;
       const total = importe + interes;
       const cadaCuota = total / cuotas;
-      document.getElementById('resultado').innerHTML = `El interés es: ${interes.toFixed(2)}\n<br>Total a pagar: ${cadaCuota.toFixed(2)}\n<br>Total a pagar: ${total.toFixed(2)}`;
+      document.getElementById('resultado').innerHTML = `El interés es: ${interes.toFixed(2)}\nCada cuota: ${cadaCuota.toFixed(2)}\nTotal a pagar: ${total.toFixed(2)}`;
     } else if (genero === "mujer" && edad < edadMujer) {
       const resultadoFinal = (9 / 30) * (30 - dias) + (9 * cuotas);
       const interes = (resultadoFinal * importe) / 100;
       const total = importe + interes;
       const cadaCuota = total / cuotas;
-      document.getElementById('resultado').innerHTML = `El interés es: ${interes.toFixed(2)}\n<br>Total a pagar: ${cadaCuota.toFixed(2)}\n<br>Total a pagar: ${total.toFixed(2)}`;
+      document.getElementById('resultado').innerHTML = `El interés es: ${interes.toFixed(2)}\nCada cuota: ${cadaCuota.toFixed(2)}\nTotal a pagar: ${total.toFixed(2)}`;
     } else {
       document.getElementById('resultado').innerHTML = "No puedes realizar financiación.";
     }
