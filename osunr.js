@@ -13,7 +13,7 @@ const calcularInteres = () => {
       const interes = (resultadoFinal * importe) / 100;
       const total = importe + interes;
       const cadaCuota = total / cuotas;
-      document.getElementById('resultado').innerHTML = `El Total es:${total.toFixed(2)}<br>El interés total es:${interes.toFixed(2)}<br>Cada cuota es:${cadaCuota.toFixed(2)}`;
+      document.getElementById('resultado').innerHTML = `El Total es:<strong>${total.toFixed(2)}</strong><br>El interés total es:<strong>${interes.toFixed(2)}</strong><br>Cada cuota es:<strong>${cadaCuota.toFixed(2)}</strong>`;
     } else if (genero === "mujer" && edad < edadMujer) {
       const resultadoFinal = (9 / 30) * (30 - dias) + (9 * cuotas);
       const interes = (resultadoFinal * importe) / 100;
