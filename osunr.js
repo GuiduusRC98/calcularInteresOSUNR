@@ -13,13 +13,14 @@ const calcularInteres = () => {
       const interes = (resultadoFinal * importe) / 100;
       const total = importe + interes;
       const cadaCuota = total / cuotas;
-      document.getElementById('resultado').innerHTML = `El Total es:<strong>${total.toFixed(2)}</strong><br>El interés total es:<strong>${interes.toFixed(2)}</strong><br>Cada cuota es:<strong>${cadaCuota.toFixed(2)}</strong><br>Interes mensual:<strong>${resultadoFinal.toFixed(2)}</strong>`;
+      const interesMensual = resultadoFinal / cuotas;
+      document.getElementById('resultado').innerHTML = `El Total es:<strong>${total.toFixed(2)}</strong><hr><br>El interés total es:<strong>${interes.toFixed(2)}</strong><<hr>br>Cada cuota es:<strong>${cadaCuota.toFixed(2)}</strong><hr><br>Interes total:<strong>${resultadoFinal.toFixed(2)}</strong><hr><br>Interes mensual:<strong>${interesMensual.toFixed(2)}</strong>`;
     } else if (genero === "mujer" && edad < edadMujer) {
       const resultadoFinal = (9 / 30) * (30 - dias) + (9 * cuotas);
       const interes = (resultadoFinal * importe) / 100;
       const total = importe + interes;
       const cadaCuota = total / cuotas;
-      document.getElementById('resultado').innerHTML = `El Total es:<strong>${total.toFixed(2)}</strong><br>El interés total es:<strong>${interes.toFixed(2)}</strong><br>Cada cuota es:<strong>${cadaCuota.toFixed(2)}</strong><br>Interes mensual:<strong>${resultadoFinal.toFixed(2)}</strong>`;
+      document.getElementById('resultado').innerHTML = `El Total es:<strong>${total.toFixed(2)}</strong><hr><br>El interés total es:<strong>${interes.toFixed(2)}</strong><hr><br>Cada cuota es:<strong>${cadaCuota.toFixed(2)}</strong><hr><br>Interes total:<strong>${resultadoFinal.toFixed(2)}</strong><hr><br>Interes mensual:<strong>${interesMensual.toFixed(2)}</strong>`;
     } else {
       document.getElementById('resultado').innerHTML = "No puedes realizar financiación.";
     }
