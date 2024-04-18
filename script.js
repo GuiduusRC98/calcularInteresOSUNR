@@ -2,7 +2,7 @@ const loadDataButton = document.getElementById('load-data');
 const dataTableBody = document.querySelector('#data-table tbody');
 
 loadDataButton.addEventListener('click', async () => {
-  const response = await fetch('data.txt');
+  const response = await fetch('./pages/data.txt');
   const data = await response.text();
   const rows = data.split('\n');
 
