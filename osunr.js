@@ -3,7 +3,7 @@ const calcularInteres = () => {
     const cuotas = parseInt(document.getElementById('cuotas').value);
     const importe = parseFloat(document.getElementById('importe').value);
     const diasTotal = parseFloat(document.getElementById('diasTotal').value);
-      const resultadoFinal = (9 / 30) * (diasTotal - diasActual) + (9 * cuotas);
+      const resultadoFinal = (3 / 30) * (diasTotal - diasActual) + (3 * cuotas);
       const interes = (resultadoFinal * importe) / 100;
       const total = importe + interes;
       const cadaCuota = total / cuotas;
